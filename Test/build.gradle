@@ -1,0 +1,37 @@
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.69")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    testImplementation 'net.serenity-bdd:serenity-core:2.0.69'
+    testImplementation 'net.serenity-bdd:serenity-junit:2.0.4'
+    testImplementation('junit:junit:4.12')
+    testImplementation('org.assertj:assertj-core:1.7.0')
+    testImplementation('org.slf4j:slf4j-simple:1.7.7')
+
+    implementation 'net.serenity-bdd:serenity-core:2.0.69'
+    implementation 'net.serenity-bdd:serenity-junit:2.0.4'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.0.67'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.67'
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    implementation group: 'io.appium', name: 'java-client', version: '1.5.0'
+
+}
+gradle.startParameter.continueOnFailure = true
