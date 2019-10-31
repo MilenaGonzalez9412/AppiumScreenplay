@@ -1,6 +1,6 @@
 # Appium Automation
 
-With this project  
+With this project a mathematical operation is automated in the calculator app of an android cellphone. 
 
 ## Getting Started
 
