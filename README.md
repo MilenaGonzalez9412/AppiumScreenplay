@@ -10,6 +10,7 @@ The project repository is downloaded using a .zip file or by copying the followi
 ### Prerequisites
 
 To run the project is necesary to have an IDE like Eclipse, IntelliJ o Netbeans.
+You need to download Appium and run the application.
 
 ### Installing
 
@@ -23,6 +24,7 @@ After download the project and open it any of the IDE mentioned before, you can 
 * [Selenium](https://www.seleniumhq.org/) - Test Automation
 * [Serenity](http://www.thucydides.info/#/) - Open source library.
 * [Cucumber](https://cucumber.io/) - Framework
+* [Appium](http://appium.io/) - Open source test automation framework for mobile apps.
 
 ## Authors
 
